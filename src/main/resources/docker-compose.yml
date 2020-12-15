@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  myapp-mariadb:
+    image: mariadb:10.5
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=springbootdb
+      - MYSQL_ROOT_PASSWORD=
+    ports:
+      - 3306:3306
